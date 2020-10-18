@@ -1,5 +1,7 @@
 ## Kratke igre saha
 
+Podatke bom zajel s strani [chessgames.com](https://www.chessgames.com/).
+
 Zajeti podatki:
 - Vse igre imajo zmagovalca
 - Igralci
