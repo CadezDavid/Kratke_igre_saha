@@ -1,9 +1,10 @@
-## Kratke igre saha
+## Kratke igre šaha
 
 Podatke bom zajel s strani [chessgames.com](https://www.chessgames.com/).
 
 Zajeti podatki:
 - Vse igre imajo zmagovalca
+- Se igre imajo največ 15 potez
 - Igralci
 - Zmage posameznik igralcev
 - Število potez na igralca
