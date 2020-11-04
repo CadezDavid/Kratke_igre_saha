@@ -4,12 +4,11 @@ Podatke bom zajel s strani [chessgames.com](https://www.chessgames.com/).
 
 Zajeti podatki:
 - Vse igre imajo zmagovalca
-- Se igre imajo največ 15 potez
-- Igralci
+- Vse igre imajo največ 15 potez
 - Zmage posameznik igralcev
 - Število potez na igralca
 - Narodnost igralcev
-- Začetne otvoritve
+- Otvoritve
 
 Delovne hipoteze:
 - Igralci nekaterih narodnosti imajo pogosteje kratke igre
