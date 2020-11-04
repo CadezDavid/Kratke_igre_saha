@@ -1,3 +1,5 @@
+#Pobral iz gradiv s predavanj
+
 import csv
 import json
 import os
@@ -51,3 +53,16 @@ def zapisi_json(objekt, ime_datoteke):
     pripravi_imenik(ime_datoteke)
     with open(ime_datoteke, 'w', encoding='utf-8') as json_datoteka:
         json.dump(objekt, json_datoteka, indent=4, ensure_ascii=False)
+
+def nalozi_stran(url):
+    odziv = requests.get(url)
+    return odziv.text
+
+def presledke_zamenjaj_z_under(niz):
+    nov_niz = ''
+    for znak in niz:
+        if znak == ' ':
+            nov_niz += '_'
+        else:
+            nov_niz += znak
+    return nov_niz
