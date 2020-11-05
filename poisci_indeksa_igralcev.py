@@ -2,12 +2,7 @@ import re
 import orodja
 
 
-
-
 def poisci_indeksa_igralcev(indeks):
-    
-    with open(f'datoteke_igre/{indeks}.html') as f:
-        vsebina = f.read()
 
     vzorec = (
         r'<b><a href="/perl/chessplayer\?pid=(?P<prvi_id>\d{5,7})">.+</a></b>\n'
@@ -15,5 +10,10 @@ def poisci_indeksa_igralcev(indeks):
         r'<b><a href="/perl/chessplayer\?pid=(?P<drugi_id>\d{5,7})">.+</a></b>'
     )
 
+    with open(f'datoteke_igre/{indeks}.html') as f:
+        vsebina = f.read()
+
     for zadetek in re.finditer(vzorec, vsebina):
         return zadetek.groupdict()
+
+    return {'prvi_id': None, 'drugi_id': None}
