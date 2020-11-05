@@ -1,0 +1,708 @@
+
+<html>
+<head>
+<meta name="keywords" content="chess, chess games, ajedrez, scacchi, schach, PGN">
+<meta name="description" content="Viewable chess game NN vs Ross Vassilev, 2009, with discussion forum and chess analysis features.">
+
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/css/cgc2a.css" />
+<title>NN vs Ross Vassilev (2009)</title>
+<script async src="//increaserev.com/ads/cm/secureads.js"></script>
+
+<!-- Google reCAPTCHA integration -->
+<script src="https://www.google.com/recaptcha/api.js?render=6LcPzqQUAAAAAKp0xQoWaR1mMZqtQ00O-Z6uAzQJ"></script>
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '292563634274827');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=292563634274827&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+  <!-- start OLGA header --->
+  <!-- meta charset="utf-8" -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<div id="olga-data" sessid="1" color_light="#FFCC99" color_dark="#CC9966" labels="Y" pgn='[Event "Casual Game"]
+[Site "FICS freechess.org"]
+[Date "2009.09.09"]
+[EventDate "?"]
+[Round "?"]
+[Result "0-1"]
+[White "NN"]
+[Black "Ross Vassilev"]
+[ECO "D08"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[PlyCount "12"]
+
+1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Be6 5. Nxd4 Bc5 6. Nb3 Bxf2+ 0-1' ratio="80" 
+notes='[]'>
+</div>
+  <script src="/olga/js/chess.js"></script>
+  <script src="/olga/js/json3.min.js"></script>
+  <link href="/olga/css/jquery-ui.min.css" rel="stylesheet">
+  <link href="/olga/css/chessboard.min.css" rel="stylesheet">
+  <script src="/olga/js/jquery-3.2.1.min.js"></script>
+  <script src="/olga/js/jquery-ui.min.js"></script>
+  <script src="/olga/js/chessboard.min.js"></script>
+  <script src="/olga/js/olga.js"></script>
+  <link rel="stylesheet" href="/olga/css/olga.css">
+  <style>
+      .ui-widget-content {
+         background: #CEDC98;
+         border: 1px solid #DDDDDD;
+         color: #333333;
+      }
+   </style>
+  <script type="text/javascript">
+    var startLoading = function(){  }
+  </script>
+	<script>
+		$( document ).ready(function() {
+			$.prototype.offset = function() {
+				return {
+					left: this[0].offsetLeft,
+					top: this[0].offsetTop
+				};
+			};
+			var board = ChessBoard("board", {draggable: false,position: ''});
+			setTimeout(initializeOLGA('board_container','board','notes', 'score_box', 'variations', 'vb', 'status','status_t','auto_button','alpha-d2270', 'numeric-fc462'),5);
+
+			setTimeout(function(){
+					if (!$("div[class^='chessboard']").length){
+						console.log("Retry Olga");
+						initializeOLGA('board_container','board','notes', 'score_box', 'variations', 'vb', 'status','status_t','auto_button','alpha-d2270', 'numeric-fc462');
+					}
+				}
+			 ,2000
+			);
+		});
+	</script>
+  <!-- end OLGA header --->
+
+
+
+		<script type="text/javascript">
+                function OpenWin(pagename) {
+                        SmallWin = window.open(pagename,'popup','scrollbars,resizable,toolbar=no,height=394,width=412,left=200,top=200');
+                        if (window.focus) {
+                                SmallWin.focus();
+                        }
+                }
+		</script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "href": "https://www.chessgames.com/chessprivacy.html"
+  }
+})});
+</script>
+
+
+</head>
+
+<body onload="startLoading();">
+
+
+<table border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" width="100%">
+<tr>
+<td valign="top" align="left" background="/chessimages/header_stripes.gif"><a href="/index.html"><img src="/chessimages/chessgameslogo.gif"
+style="margin-left:-6px;" width="431" height="60" border="0" alt="chessgames.com"></a></td>
+
+<td width="100%" background="/chessimages/header_stripes.gif" align="right" valign="top"><img src="/chessimages/header_menu.gif"
+style="margin-right:-6px;" width="238" height="60" usemap="#navbar" border="0"></td>
+</tr>
+</table>
+<map name="navbar">
+<area shape=rect coords="9,21,62,40" href="/index.html">
+<area shape=rect coords="65,21,118,40" href="/perl/chessnew">
+<area shape=rect coords="121,21,174,40" href="/perl/chessuser">
+<area shape=rect coords="177,21,230,40" href="/chesshelp.html">
+</map>
+<!--beginmenu--><div class="cgc-ns1 xsm w-100pct b1s000000 bc-FFFFEE tc-000000 center tcenter" style="margin-bottom:4px; padding:2px;">
+<a href="/perl/chessmembers">Members</a> <b>&#183;</b>
+<a href="/perl/chessprofile.pl">Prefs</a> <b>&#183;</b>
+<a href="/perl/analyzer.pl">Laboratory</a> <b>&#183;</b>
+<a href="/perl/collections">Collections</a> <b>&#183;</b>
+<a href="/perl/explorer">Openings</a> <b>&#183;</b>
+<a href="/perl/chessending">Endgames</a> <b>&#183;</b>
+<a href="/perl/sacrifices">Sacrifices</a> <b>&#183;</b>
+<a href="/perl/history">History</a> <b>&#183;</b>
+<a href="/perl/searchkibitzes">Search Kibitzing</a> <b>&#183;</b>
+<a href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a> <b>&#183;</b>
+<a href="/perl/chessnew?chessforums=1">Chessforums</a> <b>&#183;</b>
+<a href="/perl/tournaments">Tournament Index</a> <b>&#183;</b>
+<a href="/directory/">Players</a> <b>&#183;</b>
+<a href="#kibitzing"><img src="/chessimages/arrow_down.gif" width="7" height="8" border="0">Kibitzing</a>
+</div>
+<!--endmenu-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169342218-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-169342218-1');
+</script>
+
+<center>
+<script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/uae/970x250.js"></script>
+<font face="verdana,arial,helvetica" size="+1"><b><a href="/perl/chessplayer?pid=12883">NN</a></b>
+<font color="#333333">vs</font>
+<b><a href="/perl/chessplayer?pid=123680">Ross Vassilev</a></b></font><br>
+<font face="georgia,palatino,times new roman,times" size="-1">
+
+Casual Game (2009), FICS freechess.org, Sep-09
+<br>
+Queen's Gambit Declined: Albin Countergambit. Normal Line <a href="/perl/chessopening?eco=D08">(D08)</a>
+&nbsp;<b>&#183;</b>&nbsp; 0-1
+</font><br>
+
+</center>
+<font size="-1">
+<!--beginolga-->
+<div id="board_container" class="totem">
+<div id="board" style="margin:auto;"></div>
+<div id="pgn_buttons"  class="button_row">
+    <button id="startB" type="button" class="pgn_buttonc">&#171;</button>
+    <button id="prevB" type="button" class="pgn_buttona">&lt;</button>
+    <button id="nextB" type="button" class="pgn_buttonb">&gt;</button>
+    <button id="endB" type="button" class="pgn_buttonc">&#187;</button>
+    <button id="autoB" type="button" class="pgn_buttonc">+</button>
+</div>
+<div id="status_t"></div>
+</div>
+<div id="variations" class="totem-toggle variations">
+<div class="analysis_t">ANALYSIS
+<a id="ab"  onclick="exitVariation();">[<font style="color:#0000ff;font-weight:bold;">x</font>]</a>
+</div>
+<div  id="vb"  class="variation_box" tabindex="0" onmouseup="disableShortcutKeysAndStoreStatus();" onblur="restoreShortcutKeysStatus();" onfocusout="restoreShortcutKeysStatus();" ></div>
+</div>
+<div id="lower_container" class="totem">
+<div id="notes" class="note_box"></div>
+<div id="score_box" class="score_box"></div>
+<br/>
+<div id="board-options" style="display:none">
+<div class="col-1" style="width:14%;float:left;margin-left: 4%;">
+    <p style="text-align: center; font-size:1.0em; margin-bottom: 2px;">Light<br/>Squares</p>
+    <input type='color' id='lightColor' class="option_item" onInput="setLightColor(this.value);delayedNotify();" />
+</div>
+<div class="col-2" style="width:14%;float:left; margin-left:1%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom: 2px;">Dark<br/>Squares</p>
+    <input type='color' id='darkColor' class="option_item" onInput="setDarkColor(this.value);delayedNotify();" />
+</div>
+<div class="col-3" style="width:13%;float:left; margin-left:1%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom: 2px;">Invert<br/></b>Board</p>
+    <input type="image" src="/olga/img/orientation.png" class="option_item" onclick="flipOrientation();"/>
+</div>
+<div class="col-4" style="width:32px; height:32px;float:left; margin-left: 2%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom: 2px;">&nbsp;<br>Labels</p>
+    <button name="notation" class="option_item" id="notation" onclick="toggleNotation();delayedNotify();">&nbsp;ON&nbsp;</button>
+</div>
+<div class="col-5" style="width:8%;float:left; margin-left:4%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom: 2px;">&nbsp;<br>Shrink</p>
+    <input type="image" src="/olga/img/Pawn_sm.png" class="option_item"  onclick="downscaleOLGA();delayedNotify();"/>
+</div>
+<div class="col-6" style="width:8%;float:left; margin-left:4%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom: 2px;">&nbsp;<br>Grow</p>
+    <input type="image" src="/olga/img/Pawn_big.png" class="option_item"  onclick="upscaleOLGA();delayedNotify();"/>
+</div>
+    <div class="col-6" style="width:13%;float:left; margin-left:3%;">
+    <p style="text-align: center;font-size:1.0em;margin-bottom:2px;">&nbsp;<br>Copy</p>
+    <input id="cpy_fen_btn" type="image" src="/olga/img/fen.png" class="option_item" style="border:solid black 1px;" onclick="copyFEN();"/>
+</div>
+</div>
+</div>
+
+<div id="status" class="status_toggle">
+<button class="options_link" onclick="toggleOptions();"><img id="cog_img" src="/olga/img/cog.png" />&nbsp;SETTINGS</button>
+
+<button class="engine_button" onclick="sendForAnalysis();"><img id="cog_img" src="/olga/img/new_window.png" />&nbsp;ENGINE&nbsp;&nbsp;&nbsp;&nbsp;</button>
+<div  id="fb"  class="fen_box"></div>
+</div>
+<div id="snackbar">FEN COPIED</div>
+<!--endolga-->
+
+<img src="/spacer.gif" width="1" height="75">
+</font>
+<center>
+<img src="/spacer.gif" width="4" height="4"><br>
+
+
+
+<div class="center tcenter tbm5" style="max-width:600px;">
+  <a id="decode-chess" href="https://decodechess.com/ref/43" rel="nofollow">
+    <img class="img-fluid center" style="max-width:100%;"
+      src="/chessimages/DECODEBANNERFINAL_600by200.png"
+      alt="Get this game explained with Decode Chess"
+    >
+  </a>
+  </div>
+
+<script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/uae/970x250.js"></script>
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+<tr>
+<td align="center">
+<table border="0" cellpadding="2" cellspacing="0" bgcolor="#EEEEEE" width="628">
+<tr>
+<td><font face="verdana,arial,helvetica" size="-1"><a href="/perl/exploregame.pl?gid=1556283">explore this opening</a><br>
+</font></td>
+<td><font face="verdana,arial,helvetica" size="-1"><a href="/perl/chesslike.pl?gid=1556283">find similar games</a></font></td>
+<td><font face="verdana,arial,helvetica" size="-1"><a href="/perl/chessplayer?pid=12883">1,038 more games of NN</a></font></td>
+</tr>
+<tr>
+<td><font face="verdana,arial,helvetica" size="-1"></font></td>
+<td><font face="verdana,arial,helvetica" size="-1">PGN: <a href="/pgn/nn_vassilev_2009.pgn?gid=1556283">download</a> | <a href="/perl/nph-chesspgn?text=1&gid=1556283">view</a> | <a href="/perl/printgame?gid=1556283">print</a></td>
+<td><font face="verdana,arial,helvetica" size="-1">Help: <a href="/chesshelp.html">general</a> | <a href="/chesshelp.html#helpviewer">java-troubleshooting</a></font></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<img src="/spacer.gif" width="4" height="4"><br>
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#EEEEEE" width="628">
+<tr>
+<td>
+<font face="verdana,arial,helvetica" size="-2">
+<b>TIP:</b> You can get computer analysis by clicking the "ENGINE" button below the game.</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img src="/spacer.gif" width="4" height="4"><br>
+
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+<tr>
+<td>
+<table border="0" cellpadding="1" cellspacing="0" bgcolor="#EEEEEE" width="628">
+<tr>
+<td align="center" valign="middle"><form method="post" style="margin-bottom:0;" action="/perl/switchviewer.pl">
+<input type="hidden" name="view" value="0">
+<input type="hidden" name="url" value="/perl/chessgame?gid=1556283">
+<font face="verdana,arial,helvetica" size="-1">PGN Viewer:</font>
+<SELECT name="viewer">
+<OPTION value="chesstutor">ChessTutor
+<OPTION value="cvd2">Chess Viewer Deluxe II
+<OPTION value="mistybeach">MistyBeach
+<OPTION value="mychess">MyChess
+<OPTION value="olga" SELECTED>Olga Viewer (default)
+<OPTION value="pgn">None (text only)
+<OPTION value="pgn4web">pgn4web
+<OPTION value="sjkbase">Sjkbase
+</SELECT>
+
+<input type="submit" value="Set">
+&nbsp;<font face="verdana,arial,helvetica" size="-2"><a href="/chesshelp.html#viewer">What&nbsp;is&nbsp;this?</a><br></font>
+</form>
+</td>
+</tr>
+<tr>
+<td bgcolor="#CCCCCC" align="center">
+<font face="verdana,arial,helvetica" size="-2">For help with this chess viewer, please see the <a href="/olgahelp.html">Olga Chess Viewer Quickstart Guide</a>.</font>
+</td>
+</tr>
+
+<tr>
+<td align="center"><font size="-2" face="verdana,arial,helvetica">PREMIUM MEMBERS CAN REQUEST COMPUTER ANALYSIS</a> [<a href="https://www.chessgames.com/perl/analyzer.pl">more info</a>]
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+<img src="/spacer.gif" width="4" height="4"><br>
+<CENTER>
+<a name="kibitzing" border="0"><img src="/chessimages/kibitzers.jpg" width="630" height="62" alt="Kibitzer's Corner"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="630">
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr>
+<td width="100%" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan=3 bgcolor="#663300" align="center">
+
+<font face="verdana,arial,helvetica" size="-1">
+<b><a href="/perl/chessgame?gid=1556283&kpage=2#kibitzing"><font color=#FFFFFF>&lt; Earlier Kibitzing</font></a></b> &nbsp;<font color=#FFCC99><b>&#183;</b> PAGE 3 OF 3 <b>&#183;</b></font>&nbsp;
+<b><font color=#CC9966>Later Kibitzing&gt;</font></b></font></td></tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply50" href="/perl/kibitzing?kid=G1556283&reply=50"><font color=#000000>Sep-14-09</font></a></font><br><a href="/perl/chessuser?uname=kevin86"><img src="/av/face_630.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=kevin86"><font color="#000000"><u>kevin86</u></font></a></b>: White king to white queen:I have to take this.
+<br><p>Black queen to white king:I have to take this,pointing at white's queen.<p>Sounds like a classic opera plot.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply51" href="/perl/kibitzing?kid=G1556283&reply=51"><font color=#000000>Sep-14-09</font></a></font><br><a href="/perl/chessuser?uname=playground+player"><img src="/av/face_1112.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=playground%20player"><font color="#000000"><u>playground&nbsp;player</u></font></a></b>: Is this an official and bona fide Albin Countergambit Wipeout?</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply52" href="/perl/kibitzing?kid=G1556283&reply=52"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=BOSTER"><font color="#000000"><u>BOSTER</u></font></a></b>: 6...Bxf2-deflection and after 7.Kxf2 white queen  is lost.
+ If so young bishop from enemy army can lure the white king, what can I say about white kingdom.
+ Once in correspondence game after   moves 
+<br>
+1.d4 Nf6
+<br>
+2.c4 e5
+<br>
+3.dxe5 Ne4
+<br>
+4.a3 d6
+<br>
+5.exd6 Bxd6
+<br>
+6.g3 Nxf2 and white resign because after 7.Kxf2 Bxg3.
+ White lost the queen.
+<br>
+ "You should think-maybe a few days more!  about queen's security" noticed E.Gik.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply53" href="/perl/kibitzing?kid=G1556283&reply=53"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=zanshin"><font color="#000000"><u>zanshin</u></font></a></b>: Well, this one wasn't too hard - but it's only Monday ;-)<p><font color=#A04000>&lt;stanleys: Perhaps NN could have played 6.Nxe6?!&gt;</font><p>Quick Rybka analysis shows the top 3 moves for White were 6.e3, Be3 and Nxe6:<p><P><center><a href="javascript:OpenWin('/perl/fen?fen=rn1qk1nr/ppp2ppp/4b3/2b1P3/2PN4/8/PP2PPPP/RNBQKB1R')"><img src="/fen/p112/rn1qk1nr_ppp2ppp_4b3_2b1P3_2PN4_8_PP2PPPP_RNBQKB1R.gif" width=170 height=170 border=0><br><font face="georgia" size=-2>click for larger view</font></a></center><P><p> [+1.74]  d=19  6.e3 Nh6 7.Nc3 OO 8.Nxe6 fxe6 9.Qxd8 Rxd8 10.a3 Nc6 11.b4 Be7 12.f4 a5 13.b5 Nb8 14.Be2 Nd7 15.OO (0:22.50) 117718kN<p> [+1.44]  d=18  6.Be3 Bxd4 7.Qxd4 Qxd4 8.Bxd4 Bxc4 9.Na3 Nc6 10.Nxc4 Nxd4 11.OOO OOO 12.e3 Ne6 13.Rxd8 Nxd8 14.Bd3 Ne7 15.Rd1 Ne6 16.Be4 b6 17.f4 h6 (0:08.39) 44758kN<p> [+1.12]  d=18  6.Nxe6 Bxf2 7.Kxf2 Qxd1 8.Nxc7 Kf8 (0:13.36) 71233kN</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply54" href="/perl/kibitzing?kid=G1556283&reply=54"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=fyad%20reject"><font color="#000000"><u>fyad&nbsp;reject</u></font></a></b>: most depressing thing about this puzzle wasnt how long it took me to get, but rather how even after getting it, i cannot be certain that i would not make the same mistake otb</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply55" href="/perl/kibitzing?kid=G1556283&reply=55"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=WarmasterKron"><font color="#000000"><u>WarmasterKron</u></font></a></b>: Easy, first thing I looked at.
+<br><p><font color=#A04000>&lt;TheaN&gt;</font> 5.e3 leads to standard Albin positions, but after <font color=#A04000>&lt;5.Nxd4 Bc5&gt;</font>, 6.e3 does not. With the Black pawn gone, there's obviously no dxe3/exf2 threat.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply56" href="/perl/kibitzing?kid=G1556283&reply=56"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Patriot"><font color="#000000"><u>Patriot</u></font></a></b>: <font color=#A00040>&lt;<font color=#A04000>&lt;fyad reject&gt;</font>: most depressing thing about this puzzle wasnt how long it took me to get, but rather how even after getting it, i cannot be certain that i would not make the same mistake otb&gt;</font><p>There's no way of being completely certain, even for the best. I've seen GM's make these errors. But all you can do is minimize their occurence through practice of basic tactics and learning a good thought process.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply57" href="/perl/kibitzing?kid=G1556283&reply=57"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=DeltaHawk"><font color="#000000"><u>DeltaHawk</u></font></a></b>: this is similar to the game Ingrid Oen Carlsen played against Alf Goran Jakobsen in Arctic Chess Challenge 2007. She resigns after her opponent's bishop attacks her king.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply58" href="/perl/kibitzing?kid=G1556283&reply=58"><font color=#000000>Sep-14-09</font></a></font><br><a href="/perl/chessuser?uname=Once"><img src="/av/face_1801.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Once"><font color="#000000"><u>Once</u></font></a></b>: I'm going to try something a little different with these puzzles. Instead of focussing on the puzzle solution (which others do far better than me), I'm going to look at how we got to the puzzle position. The idea is to try and pinpoint the positional and tactical motifs that made the finish possible. Hopefully, this will help us to get these positions in our games - and to spot the tactics when there is no-one there to point out that a tactic is possible.<p>Over time, this ought to build up to a sort of library of mini articles about common patterns. A sort of DIY guide to puzzles. As with a lot of things I try, it might be rubbish or it might be interesting. But let's have a go and see how it works out. I'll copy the posts to my home page to keep a reocrd (and in case anyone wants to add other thoughts or examples). <p>We will start off with ...</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply59" href="/perl/kibitzing?kid=G1556283&reply=59"><font color=#000000>Sep-14-09</font></a></font><br><a href="/perl/chessuser?uname=Once"><img src="/av/face_1801.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Once"><font color="#000000"><u>Once</u></font></a></b>: Today's theme is about the removal of the defender. White leaves the two queens staring at each other along an open d file. But the only thing defending the white queen is the king sitting on its home square. If black can deflect the opposing king, the queen would be lost.<p>Here's the unplugged position ...
+<br><p><P><center><a href="javascript:OpenWin('/perl/fen?fen=3q4/8/8/2b5/8/8/4PP2/3QK3')"><img src="/fen/8348/3q4_8_8_2b5_8_8_4PP2_3QK3.gif" width=170 height=170 border=0><br><font face="georgia" size=-2>click for larger view</font></a></center><P><p>Bxf2+ deflects the white king, allowing black to play Qxd1.<p>The trigger for this sort of position is when heavy pieces are attacking each other, but one side is relying on another piece for defence. In situations like that we should be looking for ways to kick the defender away.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply60" href="/perl/kibitzing?kid=G1556283&reply=60"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=YouRang"><font color="#000000"><u>YouRang</u></font></a></b>: <font color=#A04000>&lt;Once&gt;</font> Since I'm in the mood to be a nit-picking jerk, I'll point out that in your last diagram, ...Bb4+ is actually better (we win the queen AND keep our bishop). <p>We'll need that bishop to deliver checkmate, seeing that we lack a king for that purpose. ;-)</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply61" href="/perl/kibitzing?kid=G1556283&reply=61"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=minasina"><font color="#000000"><u>minasina</u></font></a></b>: <font color=#A04000>&lt;  YouRang &gt;</font> :)</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply62" href="/perl/kibitzing?kid=G1556283&reply=62"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=cracknik"><font color="#000000"><u>cracknik</u></font></a></b>: There was a puzzle where white wins th queen in this fashion not too long ago.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply63" href="/perl/kibitzing?kid=G1556283&reply=63"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=WhiteRook48"><font color="#000000"><u>WhiteRook48</u></font></a></b>: 6...Bxf2+ ha ha
+<br>
+would NN had got more out of it with 6 e3?</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply64" href="/perl/kibitzing?kid=G1556283&reply=64"><font color=#000000>Sep-14-09</font></a></font><br><a href="/perl/chessuser?uname=Sneaky"><img src="/av/face_289.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Sneaky"><font color="#000000"><u>Sneaky</u></font></a></b>: Had the game had gone 6.Nxe6 Bxf2+ 7.Kxf2 Qxd1 8.Nxc7+ I'm not sure who would be winning.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply65" href="/perl/kibitzing?kid=G1556283&reply=65"><font color=#000000>Sep-14-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=just%20a%20kid"><font color="#000000"><u>just&nbsp;a&nbsp;kid</u></font></a></b>: <font color=#A04000>&lt;sneaky&gt;</font>Let me try to answer that.8.Nxc7+ Kd8 and White is forced to play 9.Nc3,but after 9...Qd4+ 10.Be3(again forced or Black would win the knight)10...Qxe5 11.Nxa8 and after 11...Nc6 Black would trap the Queen with 12...Qb8.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply66" href="/perl/kibitzing?kid=G1556283&reply=66"><font color=#000000>Sep-15-09</font></a></font><br><a href="/perl/chessuser?uname=Once"><img src="/av/face_1801.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Once"><font color="#000000"><u>Once</u></font></a></b>: <font color=#A04000>&lt;YouRang&gt;</font> :-) Well spotted! And thanks for giving me a laugh ... always welcome.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply67" href="/perl/kibitzing?kid=G1556283&reply=67"><font color=#000000>Sep-16-09</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=LIFE%20Master%20AJ"><font color="#000000"><u>LIFE&nbsp;Master&nbsp;AJ</u></font></a></b>: NN - Ross Vassilev [D08]
+<br>
+Casual game FICS freechess.org, 09.09.2009
+<br>
+[A.J.G.]
+<br><p>This was the game/problem for Monday; September 14th, 2009. <p>Black to move, (6... '?').  
+<br><p>1.d4 d5;   2.c4 e5;  
+<br>
+ The Albin Counter-Gambit. (See any good reference work - or a book on this opening - for more  details on this system.)  <p>3.dxe5 d4;   4.Nf3 Be6?;  
+<br>
+ This is not even a good move. (Black gets away with one.) <p>[The book line is:  &gt;/=  4...Nc6;   5.g3, " <img src="/chessimages/plusequals.gif" width=7 height=12>" when White is clearly better. (See MCO-15, page # 513; column # 16, and all the notes that apply to this column.) ]<p>5.Nxd4!?,  
+<br>
+This was OK, but it was not White's best move in this position. <p>[Better was:   5.Qxd4! "  <img src="/chessimages/whitewins.gif" width=13 height=12>" or even  5.e3±, with White emerging one or two Pawns ahead.  ]  <p>5...Bc5!?;  
+<br>
+ Even this move - which leads to a quick win ... was not Black's best play in this position. (The machine prefers 5...Nc6.)  <p>6.Nb3??,  
+<br>
+ A horrible move ... that sets White up for a simple tactic.  <p><P><center><a href="javascript:OpenWin('/perl/fen?fen=rn1qk1nr/ppp2ppp/4b3/2b1P3/2P5/1N6/PP2PPPP/RNBQKB1R')"><img src="/fen/p112/rn1qk1nr_ppp2ppp_4b3_2b1P3_2P5_1N6_PP2PPPP_RNBQKB1R.gif" width=170 height=170 border=0><br><font face="georgia" size=-2>click for larger view</font></a></center><P> <p>We have also reached the position for the "Chess Games" daily problem. <p> [Why not the simple:  &gt;/= 6.e3, '±'   when Fritz 11 considers White's position to be winning? (" <img src="/chessimages/whitewins.gif" width=13 height=12> ") ]  <p>6...Bxf2+;  (Maybe - '!')  
+<br><p>White Resigns, he is losing his Queen.  
+<br><p>Please see the CG web page of: <a href="http://www.chessgames.com/perl/chessgame?gid=1556283">NN vs R Vassilev, 2009</a> for more discussion and analysis of this game.  <p> 0-1</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply68" href="/perl/kibitzing?kid=G1556283&reply=68"><font color=#000000>Mar-15-10</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=buk2"><font color="#000000"><u>buk2</u></font></a></b>: 6.Nxe6 would have led to eventual forking of Black's King and rook but then Black's Queen would roll up White's queenside pieces. Anyway, most players give up automatically when they lose their Queen.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply69" href="/perl/kibitzing?kid=G1556283&reply=69"><font color=#000000>Mar-23-10</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=rossvassilev"><font color="#000000"><u>rossvassilev</u></font></a></b>: Short but sweet, huh? Even if white had played 6. Nxe6 and then captured my rook, my queen would then have taken his queen side bishop and rook. The only smart move would have been 6. e3. The Albin may not be as solid as other defences against queen's gambit, but there's plenty of traps for white to fall into.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply70" href="/perl/kibitzing?kid=G1556283&reply=70"><font color=#000000>Jun-06-11</font></a></font><br><a href="/perl/chessuser?uname=FSR"><img src="/av/face_2008.gif"
+                                                alt="Premium Chessgames Member" width=48 height=48 border=0></a></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=FSR"><font color="#000000"><u>FSR</u></font></a></b>: This game is crap and shouldn't be in the database. After 6.e3 White would have been up two pawns for nothing.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply71" href="/perl/kibitzing?kid=G1556283&reply=71"><font color=#000000>Jun-11-11</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=rossvassilev"><font color="#000000"><u>rossvassilev</u></font></a></b>: <font color=#A04000>&lt;FSR: This game is crap and shouldn't be in the database. After 6.e3 White would have been up two pawns for nothing.&gt;</font> true. still a nice finish, though? :)</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply72" href="/perl/kibitzing?kid=G1556283&reply=72"><font color=#000000>Jun-12-11</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=AGOJ"><font color="#000000"><u>AGOJ</u></font></a></b>: No, <font color=#A04000>&lt;Ross&gt;</font>, it is not a nice finish. It is a game where either NN is a total beginner, or was drunk, or the game controls were 30 seconds each for the whole game, or worse, much worse. In any case, not a very edifying game. You are, of course, not to blame for what NN played, and heaven knows I have been guilty of winning against players worse than myself in deplorable fashion, but tell me, are you really proud of this?</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply73" href="/perl/kibitzing?kid=G1556283&reply=73"><font color=#000000>Aug-17-13</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=Abdel%20Irada"><font color="#000000"><u>Abdel&nbsp;Irada</u></font></a></b>: Was this a blitz game? 3 0, perhaps? Otherwise, White's play is incomprehensible.<p>I think <font color=#A04000>&lt;chessgames.com&gt;</font> should hesitate to add to the database games from casual play on chess servers, particularly when the strength of the respective players has not been ascertained according to anything appearing on their player pages.<p>Some exceptions should be allowed for games of real instructive value: where, for example, the winning combination is something special and worth seeing. But this game is poor by any standard, and the winning "combination" is a one-mover, so there isn't any instructive use except for total beginners.<p>&#8734;</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr><td align=RIGHT bgcolor=#FFFFFF valign=TOP NOWRAP><font size=-1 face='verdana,arial,helvetica' color=#663300><a name="reply74" href="/perl/kibitzing?kid=G1556283&reply=74"><font color=#000000>Dec-30-18</font></a></font></td><td>&nbsp;&nbsp;</td><td valign=TOP align=LEFT width=100%><font face='verdana,arial,helvetica' size=-1><b><a href="/perl/chessuser?uname=rossvassilev"><font color="#000000"><u>rossvassilev</u></font></a></b>: A similar game: <a href="http://www.chessgames.com/perl/chessgame?gid=1469549">A G Jakobsen vs I Carlsen, 2007</a>.</font></td></tr>
+<tr class="bc-000000" style="height:1px;">
+<td colspan="3" style="height:1px;"></td>
+</tr>
+<tr>
+<td colspan=3 bgcolor=#996633 align=CENTER><font face="verdana,arial,helvetica" size=-2 color=#FFFFFF><form style="margin-bottom:0;" method="get" action="/perl/chessgame"><b>Jump to page #</b>&nbsp;<input type=HIDDEN name="gid" value="1556283">
+<input type=TEXT name="kpage" value="3" size=4 onFocus="disableShortcutKeysAndStoreStatus();"
+                                onBlur="restoreShortcutKeysStatus();">&nbsp;<input type=SUBMIT value="go"> (enter # from 1 to 3)<br></form></font><img src="/spacer.gif" width="4" height="4"></td></tr>
+<tr><td colspan=3 bgcolor=#CC9966 align=CENTER><font face="verdana,arial,helvetica" size=-2 color=#FFFFFF><form style="margin-bottom:0;" method=GET action="/perl/searchkibitzes"><b>search thread:</b>&nbsp;<input type=HIDDEN name="extra" value="kid:G1556283">
+<input type=TEXT name="search" value="" size=22 onFocus="disableShortcutKeysAndStoreStatus();"
+				onBlur="restoreShortcutKeysStatus();">&nbsp;<input type=SUBMIT value="go"><br></form></font><img src="/spacer.gif" width=4 height=4></td></tr>
+<tr>
+<td colspan=3 bgcolor="#663300" align="center">
+
+<font face="verdana,arial,helvetica" size="-1">
+<b><a href="/perl/chessgame?gid=1556283&kpage=2#kibitzing"><font color=#FFFFFF>&lt; Earlier Kibitzing</font></a></b> &nbsp;<font color=#FFCC99><b>&#183;</b> PAGE 3 OF 3 <b>&#183;</b></font>&nbsp;
+<b><font color=#CC9966>Later Kibitzing&gt;</font></b></font></td></tr>
+
+</table>
+</td>
+<td class="bc-FFFFFF" style="width:1px;"></td>
+<td valign=TOP align=CENTER></td>
+</tr>
+</table>
+
+<table style="border-with:0; padding:12px; max-width:630px; background-color:#FEDC95;"  cellspacing="0">
+<tr>
+<td valign="top"><p class="cgc-ns1 sm"><b>NOTE:</b> <a href="/perl/chessprofile.pl">Create an account</a> today
+to post replies and access other powerful features which are available only to registered users.
+Becoming a member is <b>free</b>, <b>anonymous</b>, and takes less than 1 minute! If you already have a username,
+then simply login <a href="/perl/chesslogin.pl">login</a> under your username now to join the discussion.</p>
+</td>
+<td valign="middle">
+<p class="cgc-ns1 b sm">Please observe our posting guidelines:</p>
+<ol class="cgc-ns1 xsm" style="margin-left:20px; padding:0;">
+<li>No obscene, racist, sexist, or profane language.</li>
+<li>No spamming, advertising, duplicate, or gibberish posts.</li>
+<li>No vitriolic or systematic personal attacks against other members.</li>
+<li>Nothing in violation of United States law.</li>
+<li>No cyberstalking or malicious posting of negative or private information (doxing/doxxing) of members.</li>
+<li>No trolling.</li>
+<li>The use of "sock puppet" accounts to circumvent disciplinary action taken by moderators, create a false impression of consensus or support, or stage conversations, is prohibited.</li>
+</ol>
+<p class="cgc-ns1 xsm">Please try to maintain a semblance of civility at all times.</p>
+
+	
+		<table border="0" cellpadding="2" cellspacing="0" bgcolor="#FFE8B8">
+		<tr>
+		<td><a href="/perl/whistle?kid=G1556283"><img src="/chessimages/whistle.gif" width="54" height="54" alt="Blow the Whistle" border="0"></a></td>
+		<td valign="middle" align="left"><p class="cgc-ns1 sm i">See something that violates our rules? <a href="/perl/whistle?kid=G1556283">Blow the whistle</a> and inform a moderator.</p>
+		</td>
+		</tr>
+		</table>
+		<img src="/spacer.gif" style="width:2px; height:2px;"><br>
+
+	
+<p class="cgc-ns1 xsm">NOTE: <i>Please keep all discussion on-topic.</i>
+This forum is for this specific game only. To discuss chess or this site in general,
+visit the <a href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>.</font></p>
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2"><p class="cgc-ns1 xsm i"><i>Messages posted by Chessgames members
+do not necessarily represent the views of Chessgames.com, its employees, or sponsors.<br>
+All moderator actions taken are ultimately at the sole discretion of the administration.</p></td>
+</tr>
+</table>
+</CENTER><div style="width:628px; margin:auto">
+<p class="gametype_cs_notice" style="text-align:left; margin:10px; font-family:Georgia,Palatino,Times; font-size:small;">This game is type: <b>CLASSICAL</b>. Please report incorrect or missing information by submitting a <a href="/perl/chesscorrection.pl?type=G&key=1556283">correction slip</a>
+to help us improve the quality of our content.</p>
+</div><center>
+<p>
+<script data-cfasync="false" type="text/javascript" src="//www.increaserev.com/ads/uae/970x250.js"></script>
+</p>
+</center>
+<center><table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="630">
+<tr>
+<td>
+<table border="0" cellpadding="4" cellspacing="0" width="100%" style="background-color: #FFFFDD;" bgcolor="#FFFFDD">
+<tr style="background-color: #FFCC99;" bgcolor="#FFCC99">
+<td align="center" background="/chessimages/highlight_stripes.gif"><font
+face="verdana,arial" size="-1"><b>Featured in the Following Game Collections<b><font size="-2">[<a href="/chesshelp.html#collections">what is this?</a>]</font></b></b></font></td>
+</tr>
+<tr>
+<td><table border="0" cellpadding="2" cellspacing="0" width="100%"><tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1014286">6 Nd4-b3?? opens d-file, a7-g1 diagonal for 6 ... Bc5xf2+!</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>OPENING LINES: EXTENSION & EXPOSURE (E&E)</i> by <a href="/perl/chessuser?uname=notyetagm"><font color="#000000"><u>notyetagm</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1032227">QGD Albin Countergambit. Normal Line(D08) 0-1 Bxf2+ gains QxQd1</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Black B Gambitz by Fredthebear</i> by <a href="/perl/chessuser?uname=fredthebear"><font color="#000000"><u>fredthebear</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1034868">98_D08-D09_Albin Counter Gambit</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">by <a href="/perl/chessuser?uname=nakul1964"><font color="#000000"><u>nakul1964</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1038767">98_D08-D09_Albin Counter Gambit</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">by <a href="/perl/chessuser?uname=AdolfoAugusto"><font color="#000000"><u>AdolfoAugusto</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1031804">QGD Albin Countergambit. Normal Line(D08) 0-1 Bxf2+ gains QxQd1</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>yFTB Decoys to, Deflections from, Remove Guard</i> by <a href="/perl/chessuser?uname=fredthebear"><font color="#000000"><u>fredthebear</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1014514">my favorite games </a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">by <a href="/perl/chessuser?uname=iywo"><font color="#000000"><u>iywo</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1019541">Queen's Gambit Declined: Albin Countergambit gam</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">by <a href="/perl/chessuser?uname=vasileios"><font color="#000000"><u>vasileios</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1005578">6...Bxf2+</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Deflection (Removing the Guard)</i> by <a href="/perl/chessuser?uname=patzer2"><font color="#000000"><u>patzer2</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1041773">QGD Albin Countergambit. Normal Line(D08) 0-1 Bxf2+ gains QxQd1</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Basic Foodfight Recipe Catered by Fredthebear</i> by <a href="/perl/chessuser?uname=mneuwirth"><font color="#000000"><u>mneuwirth</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1042567">6 Nd4-b3?? opens d-file, a7-g1 diagonal for 6 ... Bc5xf2+!</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>OPENING LINES: EXTENSION & EXPOSURE (E&E)</i> by <a href="/perl/chessuser?uname=trh6upsz"><font color="#000000"><u>trh6upsz</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1011170">Deflection 6...?</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Puzzles for K-5</i> by <a href="/perl/chessuser?uname=ruzon"><font color="#000000"><u>ruzon</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1042119">6 moves</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Chess Miniatures, Collection IV</i> by <a href="/perl/chessuser?uname=3sun3moon"><font color="#000000"><u>3sun3moon</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1016720">Black to move, (6... '?'). [Monday; September 14th, 2009.] </a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>"ChessGames" >Problem of The Day< (2009)</i> by <a href="/perl/chessuser?uname=LIFE%20Master%20AJ"><font color="#000000"><u>LIFE&nbsp;Master&nbsp;AJ</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFEEC5">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1020154">6...? (Monday, September 14)</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Puzzle of the Day 2009</i> by <a href="/perl/chessuser?uname=Phony%20Benoni"><font color="#000000"><u>Phony&nbsp;Benoni</u></font></a></font></td>
+</tr>
+<tr bgcolor="#FFFFEE">
+<td><font face="Georgia,Palatino,Times,Times New Roman" size="-1"><b><a href="/perl/chesscollection?cid=1041808">QGD Albin Countergambit. Normal Line(D08) 0-1 Bxf2+ gains QxQd1</a></b></font><br>
+	<font face="verdana,helvetica,arial" size="-2">from <i>Basic Foodfight Recipe Catered by Fredthebear</i> by <a href="/perl/chessuser?uname=mneuwirth"><font color="#000000"><u>mneuwirth</u></font></a></font></td>
+</tr>
+
+</table></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center><p><div class="cgc-ns1 xsm mw-100pct b1s000000 bc-FFFFEE tc-000000 center tcenter tbm10" style="padding:2px;">
+<a href="/index.html">Home</a> |
+<a href="/chessabout.html">About</a> |
+<a href="/perl/chesslogin.pl">Login</a> |
+<a href="/perl/chesslogout.pl">Logout</a> |
+<a href="/chesshelp.html">F.A.Q.</a> |
+<a href="/perl/chessuser">Profile</a> |
+<a href="/perl/chessprofile.pl">Preferences</a> |
+<a href="/perl/chessmembers">Premium&nbsp;Membership</a> |
+<a href="/perl/chessforum.pl">Kibitzer's&nbsp;Caf&eacute;</a> |
+<a href="/perl/bistro.pl">Biographer's&nbsp;Bistro</a> |
+<a href="/perl/chessnew">New&nbsp;Kibitzing</a> |
+<a href="/perl/chessnew?chessforums=1">Chessforums</a> |
+<a href="/perl/tournaments">Tournament Index</a> |
+<a href="/directory/">Player&nbsp;Directory</a> |
+<a href="/perl/goat.pl">Notable&nbsp;Games</a> |
+<a href="/wcc.html">World&nbsp;Chess&nbsp;Championships</a> |
+<a href="/perl/explorer">Opening&nbsp;Explorer</a> |
+<a href="/perl/guessthemove">Guess&nbsp;the&nbsp;Move</a> |
+<a href="/perl/collections">Game&nbsp;Collections</a> |
+<a href="/bookie.html">ChessBookie&nbsp;Game</a> |
+<a href="/perl/challenge">Chessgames Challenge</a> |
+<a href="https://store.chessgames.com">Store</a> |
+<a href="/chessprivacy.html">Privacy&nbsp;Notice</a> |
+<a href="mailto:chess@chessgames.com">Contact&nbsp;Us</a></div>
+<p class="cgc-ns1 center tcenter xxsm tbm5">Copyright 2001-2020, Chessgames Services LLC</p>
+<div class="adsbyir s970x90" IR-Btn-Text="Close"></div>
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+<!-- JavaScript ssm -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/hide-ad.js"></script>
+</body>
+</html>
