@@ -8,7 +8,7 @@ def poisci_podatke_igralca(indeks):
         return {'letnica_rojstva': None, 'drzava_rojstva': None} 
 
     vzorec = (
-        r'<font size=-2>\(.*(?P<letnica_rojstva>\d{4}).*\)(?P<drzava_rojstva>.*)</font>'
+        r'<font size=-2>\(.*?(?P<letnica_rojstva>\d{4}).*?\)(?P<drzava_rojstva>.*)</font>'
         r'</font></td>\n'
         r'<td background="/chessimages/chessgamesbio\.gif" width=212 align=RIGHT>'
     )
