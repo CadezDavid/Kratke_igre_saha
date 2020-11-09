@@ -66,3 +66,19 @@ def presledke_zamenjaj_z_under(niz):
         else:
             nov_niz += znak
     return nov_niz
+
+def odstrani_vsebino_v_oklepajih(niz):
+    if niz == None:
+        return None
+    else:
+        nov_niz = ''
+        stevec = 0
+        for znak in niz:
+            if znak == '(':
+                    stevec += 1
+            if stevec > 0:
+                if znak == ')':
+                    stevec -= 1
+            elif stevec == 0:
+                    nov_niz += znak
+        return nov_niz
