@@ -83,6 +83,6 @@ imena_polj_csv_igre = [polje for polje in igre[0]]
 imena_polj_csv_igralci = [polje for polje in igralci[0]]
 
 orodja.zapisi_csv(igre, imena_polj_csv_igre, 'izluscene_igre.csv')
-orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'izluscene_igralci.csv')
+orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'izlusceni_igralci.csv')
 orodja.zapisi_json(igre, 'izluscene_igre.json')
 orodja.zapisi_json(igralci, 'izlusceni_igralci.json')
