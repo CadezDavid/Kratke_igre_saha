@@ -37,6 +37,7 @@ vzorec = (
 
 igre = list()
 igralci = list()
+seznam_igralcev = list() #Da se ne bodo podvajali, bom v ta seznam shranjeval indekse
 stevec = 0
 
 for stran in range(200):
@@ -53,8 +54,8 @@ for stran in range(200):
 
             podatki_igre['letnica_prvega'] = podatki_prvega['letnica_rojstva']
             podatki_igre['letnica_drugega'] = podatki_drugega['letnica_rojstva']
-            podatki_igre['drzava_prvega'] = podatki_prvega['drzava_rojstva']
-            podatki_igre['drzava_drugega'] = podatki_drugega['drzava_rojstva']
+            podatki_igre['drzava_prvega'] = orodja.odstrani_vsebino_v_oklepajih(podatki_prvega['drzava_rojstva'])
+            podatki_igre['drzava_drugega'] = orodja.odstrani_vsebino_v_oklepajih(podatki_drugega['drzava_rojstva'])
 
             if podatki_igre['letnica_prvega'] and podatki_igre['letnica_drugega'] and podatki_igre['drzava_prvega'] and podatki_igre['drzava_drugega']:
                 stevec += 1
@@ -63,15 +64,25 @@ for stran in range(200):
                 if podatki_igre[podatek] != None:
                     podatki_igre[podatek] = podatki_igre[podatek].strip()
 
-            igralci.append(
-                {'id': idja_igralcev['prvi_id'],'ime': podatki_igre['prvi_igralec'], 'letnica_rojstva': podatki_igre['letnica_prvega'], 'drzava_rojstva': podatki_igre['drzava_prvega']}
-            )
-            igralci.append(
-                {'id': idja_igralcev['drugi_id'],'ime': podatki_igre['drugi_igralec'], 'letnica_rojstva': podatki_igre['letnica_drugega'], 'drzava_rojstva': podatki_igre['drzava_drugega']}
-            )
+            if idja_igralcev['prvi_id'] not in seznam_igralcev:
+                igralci.append(
+                    {'id': idja_igralcev['prvi_id'],'ime': podatki_igre['prvi_igralec'], 'letnica_rojstva': podatki_igre['letnica_prvega'], 'drzava_rojstva': podatki_igre['drzava_prvega']}
+                )
+                seznam_igralcev.append(idja_igralcev['prvi_id'])
+            
+            if idja_igralcev['drugi_id'] not in seznam_igralcev:
+                igralci.append(
+                    {'id': idja_igralcev['drugi_id'],'ime': podatki_igre['drugi_igralec'], 'letnica_rojstva': podatki_igre['letnica_drugega'], 'drzava_rojstva': podatki_igre['drzava_drugega']}
+                )
+                seznam_igralcev.append(idja_igralcev['drugi_id'])
 
             igre.append(podatki_igre)
 
 
-orodja.zapisi_json(igralci, 'izlusceni_igralci.json')
+imena_polj_csv_igre = [polje for polje in igre[0]]
+imena_polj_csv_igralci = [polje for polje in igralci[0]]
+
+orodja.zapisi_csv(igre, imena_polj_csv_igre, 'izluscene_igre.csv')
+orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'izluscene_igralci.csv')
 orodja.zapisi_json(igre, 'izluscene_igre.json')
+orodja.zapisi_json(igralci, 'izlusceni_igralci.json')
