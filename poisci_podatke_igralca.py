@@ -27,7 +27,7 @@ def poisci_podatke_igralca(indeks):
 		r'Last FIDE rating: <B>(?P<kvaliteta>\d*)</B>'
 	)
 
-	with open(f'datoteke_igralci/{indeks}.html') as f:
+	with open(f'html_datoteke_igralci/{indeks}.html') as f:
 		vsebina = f.read()
 
 	profil_igralca = dict()
