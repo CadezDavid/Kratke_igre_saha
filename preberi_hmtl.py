@@ -9,7 +9,7 @@ def shrani_html_igralcev(indeks):
     indeksa_igralcev = poisci_indeksa_igralcev.poisci_indeksa_igralcev(indeks)
     for igralec in indeksa_igralcev:
         url = f'https://www.chessgames.com/perl/chessplayer?pid={indeksa_igralcev[igralec]}'
-        orodja.shrani_spletno_stran(url, f'datoteke_igralci/{indeksa_igralcev[igralec]}.html')
+        orodja.shrani_spletno_stran(url, f'html_datoteke_igralci/{indeksa_igralcev[igralec]}.html')
 
 
 vzorec = (
@@ -41,7 +41,7 @@ seznam_igralcev = list() #Da se ne bodo podvajali, bom v ta seznam shranjeval in
 stevec = 0
 
 for stran in range(200):
-	with open(f'datoteke/kratke_igra_saha_stran_{stran}.html') as f:
+	with open(f'html_datoteke/kratke_igra_saha_stran_{stran}.html') as f:
 		print('Zdej sem v', stran, 'strani.')
 		vsebina = f.read()
 		for zadetek in re.finditer(vzorec, vsebina):
@@ -82,7 +82,7 @@ imena_polj_csv_igralci = [
     'delez_zmag', 'kvaliteta'
 ]
 
-orodja.zapisi_csv(igre, imena_polj_csv_igre, 'izluscene_igre.csv')
-orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'izlusceni_igralci.csv')
-orodja.zapisi_json(igre, 'izluscene_igre.json')
-orodja.zapisi_json(igralci, 'izlusceni_igralci.json')
+orodja.zapisi_csv(igre, imena_polj_csv_igre, 'obdelani_podatki/izluscene_igre.csv')
+orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'obdelani_podatki/izlusceni_igralci.csv')
+orodja.zapisi_json(igre, 'obdelani_podatki/izluscene_igre.json')
+orodja.zapisi_json(igralci, 'obdelani_podatki/izlusceni_igralci.json')
