@@ -41,46 +41,46 @@ seznam_igralcev = list() #Da se ne bodo podvajali, bom v ta seznam shranjeval in
 stevec = 0
 
 for stran in range(200):
-    with open(f'datoteke/kratke_igra_saha_stran_{stran}.html') as f:
-        print('Zdej sem v', stran, 'strani.')
-        vsebina = f.read()
-        for zadetek in re.finditer(vzorec, vsebina):
-            podatki_igre = zadetek.groupdict()
+	with open(f'datoteke/kratke_igra_saha_stran_{stran}.html') as f:
+		print('Zdej sem v', stran, 'strani.')
+		vsebina = f.read()
+		for zadetek in re.finditer(vzorec, vsebina):
+			podatki_igre = zadetek.groupdict()
 
-            idja_igralcev = poisci_indeksa_igralcev.poisci_indeksa_igralcev(podatki_igre['indeks_igre'])
-            if idja_igralcev['prvi_id']:
-                podatki_prvega = poisci_podatke_igralca.poisci_podatke_igralca(idja_igralcev['prvi_id'])
-                podatki_drugega = poisci_podatke_igralca.poisci_podatke_igralca(idja_igralcev['drugi_id'])
+			idja_igralcev = poisci_indeksa_igralcev.poisci_indeksa_igralcev(podatki_igre['indeks_igre'])
+			podatki_igre.update(idja_igralcev)
 
-            podatki_igre['letnica_prvega'] = podatki_prvega['letnica_rojstva']
-            podatki_igre['letnica_drugega'] = podatki_drugega['letnica_rojstva']
-            podatki_igre['drzava_prvega'] = orodja.odstrani_vsebino_v_oklepajih(podatki_prvega['drzava_rojstva'])
-            podatki_igre['drzava_drugega'] = orodja.odstrani_vsebino_v_oklepajih(podatki_drugega['drzava_rojstva'])
+			podatki_prvega = poisci_podatke_igralca.poisci_podatke_igralca(idja_igralcev['prvi_id'])
+			podatki_drugega = poisci_podatke_igralca.poisci_podatke_igralca(idja_igralcev['drugi_id'])
 
-            if podatki_igre['letnica_prvega'] and podatki_igre['letnica_drugega'] and podatki_igre['drzava_prvega'] and podatki_igre['drzava_drugega']:
-                stevec += 1
+			podatki_igre = orodja.strip_vse(podatki_igre)
 
-            for podatek in podatki_igre:
-                if podatki_igre[podatek] != None:
-                    podatki_igre[podatek] = podatki_igre[podatek].strip()
+			if idja_igralcev['prvi_id'] not in seznam_igralcev:
+				podatki_prvega.update({'id': idja_igralcev['prvi_id'], 'ime': podatki_igre['prvi_igralec']})
+				podatki_prvega = orodja.strip_vse(podatki_prvega)
+				igralci.append(podatki_prvega)
+				seznam_igralcev.append(idja_igralcev['prvi_id'])
 
-            if idja_igralcev['prvi_id'] not in seznam_igralcev:
-                igralci.append(
-                    {'id': idja_igralcev['prvi_id'],'ime': podatki_igre['prvi_igralec'], 'letnica_rojstva': podatki_igre['letnica_prvega'], 'drzava_rojstva': podatki_igre['drzava_prvega']}
-                )
-                seznam_igralcev.append(idja_igralcev['prvi_id'])
-            
-            if idja_igralcev['drugi_id'] not in seznam_igralcev:
-                igralci.append(
-                    {'id': idja_igralcev['drugi_id'],'ime': podatki_igre['drugi_igralec'], 'letnica_rojstva': podatki_igre['letnica_drugega'], 'drzava_rojstva': podatki_igre['drzava_drugega']}
-                )
-                seznam_igralcev.append(idja_igralcev['drugi_id'])
+			if idja_igralcev['drugi_id'] not in seznam_igralcev:
+				podatki_drugega.update({'id': idja_igralcev['drugi_id'], 'ime': podatki_igre['drugi_igralec']})
+				podatki_drugega = orodja.strip_vse(podatki_drugega)
+				igralci.append(podatki_drugega)
+				seznam_igralcev.append(idja_igralcev['drugi_id'])
 
-            igre.append(podatki_igre)
+			igre.append(podatki_igre)
 
+imena_polj_csv_igre = [
+    'indeks_igre', 'prvi_igralec', 'prvi_id', 'drugi_igralec',
+    'drugi_id', 'izid', 'stevilo_potez', 'leto', 'kraj',
+    'odprtje_neka_stevilka', 'odprtje'
+]
 
-imena_polj_csv_igre = [polje for polje in igre[0]]
-imena_polj_csv_igralci = [polje for polje in igralci[0]]
+imena_polj_csv_igralci = [
+    'id', 'ime', 'letnica_rojstva', 'drzava_rojstva',
+    'stevilo_iger_v_bazi', 'zacetek', 'konec',
+    'zmage', 'porazi', 'remiji',
+    'delez_zmag', 'kvaliteta'
+]
 
 orodja.zapisi_csv(igre, imena_polj_csv_igre, 'izluscene_igre.csv')
 orodja.zapisi_csv(igralci, imena_polj_csv_igralci, 'izlusceni_igralci.csv')
