@@ -9,16 +9,16 @@ Zajel sem 5000 iger, ki ustrezajo pogojem; odigrane po letu 1980, se končajo z 
 ### O vsaki igri sem pobral:
 - igralca, ki sta jo odigrala,
 - izid,
-- kraj, kjer je potekala
-- in odprtje, s katerim se je začela.
+- kraj, kjer je potekala, in
+- odprtje, s katerim se je začela.
 
 ### O slehernem igralcu pa:
 - ime,
 - aktivna leta,
 - število vseh iger v bazi,
 - letnico in državo rojstva,
-- skupno število zmag, porazov in remijev ter delež zmag
-- in FIDE rating kot kvaliteto.
+- skupno število zmag, porazov in remijev ter delež zmag in
+- FIDE rating kot kvaliteto.
 
 ## Delovne hipoteze:
 - Igralci nekaterih narodnosti imajo pogosteje kratke igre.
