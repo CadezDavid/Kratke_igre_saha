@@ -9,7 +9,7 @@ Zajel sem 5000 iger, ki ustrezajo pogojem: odigrane so po letu 1980, končajo se
 ### O vsaki igri sem pobral:
 - igralca, ki sta jo odigrala,
 - izid,
-- kraj, kjer je potekala, in
+- kraj, kjer je potekala,
 - odprtje, s katerim se je začela.
 
 ### O slehernem igralcu pa:
@@ -17,7 +17,7 @@ Zajel sem 5000 iger, ki ustrezajo pogojem: odigrane so po letu 1980, končajo se
 - aktivna leta,
 - število vseh iger v bazi,
 - letnico in državo rojstva,
-- skupno število zmag, porazov in remijev ter delež zmag in
+- skupno število zmag, porazov in remijev ter delež zmag,
 - FIDE rating kot kvaliteto.
 
 ## Delovne hipoteze:
