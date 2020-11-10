@@ -5,6 +5,7 @@ import json
 import os
 import requests
 import sys
+import re
 
 
 def pripravi_imenik(ime_datoteke):
@@ -82,3 +83,17 @@ def odstrani_vsebino_v_oklepajih(niz):
             elif stevec == 0:
                     nov_niz += znak
         return nov_niz
+
+def strip_vse(slovar):
+    for element in slovar:
+        if slovar[element] != None:
+            slovar[element] = slovar[element].strip()
+    return slovar
+
+def aktivna_leta(niz):
+    if len(niz) == 4:
+        return {'zacetek': niz, 'konec': niz}
+    else:
+        vzorec = r'(?P<zacetek>\d{4})\D*(?P<konec>\d{4})'
+        for zadetek in re.finditer(vzorec, niz):
+            return zadetek.groupdict()
