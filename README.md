@@ -4,7 +4,7 @@ Podatke sem zajel s strani [chessgames.com](https://www.chessgames.com/).
 
 ## Zajeti podatki:
 
-Zajel sem 5000 iger, ki ustrezajo pogojem; odigrane po letu 1980, se končajo z remijem in imajo največ 15 potez. Nato sem pobral še podatke igralcev, ki so sodelovali v vsaj eni od zajetih iger. Njih je 7567. Podatki o igrah so v datotekah `izluscene_igre.json` in `izluscene_igre.csv`, o igralcih pa v `izlusceni_igralci.json` in `izlusceni_igralci.csv`.
+Zajel sem 5000 iger, ki ustrezajo pogojem: odigrane so po letu 1980, končajo se z remijem in imajo največ 15 potez. Nato sem pobral še podatke igralcev, ki so sodelovali v vsaj eni od zajetih iger. Njih je 7567. Podatki o igrah so v datotekah `izluscene_igre.json` in `izluscene_igre.csv`, o igralcih pa v `izlusceni_igralci.json` in `izlusceni_igralci.csv`.
 
 ### O vsaki igri sem pobral:
 - igralca, ki sta jo odigrala,
