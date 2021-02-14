@@ -1,5 +1,4 @@
-#Pobral iz gradiv s predavanj
-
+# Celotno datoteko sem vzel iz gradiv s predavanj
 import csv
 import json
 import os
