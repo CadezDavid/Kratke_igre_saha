@@ -22,6 +22,6 @@ Zajel sem 5000 iger, ki ustrezajo pogojem: odigrane so po letu 1980, ne končajo
 
 ## Delovne hipoteze:
 - Večkrat zmaga igralec z belimi figurami.
-- Pri odprjih D ali E pogosteje zmaga črni igralec.
-- Odprtje A je pogostejše pri boljših igralcih.
+- Pri odprjih `D` ali `E` pogosteje zmaga črni igralec.
+- Povprečna kvaliteta igralca, ki začne z določenim odprtjem, je najvišja pri odrtjih kategorije `E`.
 - Igralci, ki so začeli igrati pred 1980, imajo manjši delež remijev kot ostali.
