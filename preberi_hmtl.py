@@ -19,7 +19,7 @@ vzorec = (
     r'\.&nbsp;'
     r'<a href="/perl/chessgame\?gid=(?P<indeks_igre>\d{7})">(?P<prvi_igralec>.+)vs(?P<drugi_igralec>.+)</a></font></td>\n'
     r'<td valign=TOP NOWRAP>'
-    r'.*' #nekateri imajo eno ali dve ikonici, to se vse preskoci
+    r'.*'
     r'</td>'
     r'<td align=RIGHT NOWRAP>'
     r'<font face=.verdana,arial,helvetica. size=-1>(?P<izid>\d[-]\d)</font></td>'
@@ -28,21 +28,21 @@ vzorec = (
     r'<td align=RIGHT>'
     r'<font face=.verdana,arial,helvetica. size=-1>(?P<leto>\d{4})</font></td>'
     r'<td><font face=.verdana,arial,helvetica. size=-1>'
-    r'<font size=-2>(<.+>)?(?P<kraj>.+)(</a>)?</font></font></td>'
+    r'<font size=-2>(<.+>)?(?P<kraj>[^<]+?)(</a>)?</font></font></td>'
     r'<td><font face=.verdana,arial,helvetica. size=-1>'
     r'<font size=-2>'
-    r'<a href="/perl/chessopening\?eco=...">(?P<odprtje_neka_stevilka>.{3})</a>'
-    r'(?P<odprtje>.+?)</font></font></td></tr>\n'
+    r'<a href="/perl/chessopening\?eco=...">(?P<odprtje_eco>.{3})</a>'
+    r'(?P<odprtje>[^<]+?)</font></font></td></tr>\n'
 )
 
 igre = list()
 igralci = list()
-seznam_igralcev = list() #Da se ne bodo podvajali, bom v ta seznam shranjeval indekse
+seznam_igralcev = list()
 stevec = 0
 
 for stran in range(200):
 	with open(f'html_datoteke/kratke_igra_saha_stran_{stran}.html') as f:
-		print('Zdej sem v', stran, 'strani.')
+		print('Sem na', stran, 'strani.')
 		vsebina = f.read()
 		for zadetek in re.finditer(vzorec, vsebina):
 			podatki_igre = zadetek.groupdict()
@@ -72,7 +72,7 @@ for stran in range(200):
 imena_polj_csv_igre = [
     'indeks_igre', 'prvi_igralec', 'prvi_id', 'drugi_igralec',
     'drugi_id', 'izid', 'stevilo_potez', 'leto', 'kraj',
-    'odprtje_neka_stevilka', 'odprtje'
+    'odprtje_eco', 'odprtje'
 ]
 
 imena_polj_csv_igralci = [
