@@ -25,3 +25,4 @@ Zajel sem 5000 iger, ki ustrezajo pogojem: odigrane so po letu 1980, ne končajo
 - Pri odprjih `D` ali `E` pogosteje zmaga črni igralec.
 - Povprečna kvaliteta igralca, ki začne z določenim odprtjem, je najvišja pri odrtjih kategorije `E`.
 - Igralci, ki so začeli igrati pred 1980, imajo manjši delež remijev kot ostali.
+- Hitreje so se končale igre, ki jih je zmagal beli.
