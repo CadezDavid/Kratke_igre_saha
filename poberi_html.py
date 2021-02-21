@@ -1,6 +1,8 @@
 import re, requests
 import orodja
 
+
+# Dodal nek komentar
 stevilo_strani = 200
 
 def html(stran):
